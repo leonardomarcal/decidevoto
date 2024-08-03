@@ -184,6 +184,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     border: #6666663d solid 1px;
+}
 /* Estilo para a seção específica do candidato */
 .candidate {
     background-color: #ffffff; /* Cor de fundo da seção do candidato */
