@@ -128,7 +128,6 @@ body {
 }
 
 
-<<<<<<< Updated upstream
 .candidato {
     max-width: 1553px;
     display: flex;
@@ -185,12 +184,10 @@ body {
     align-items: flex-start;
     justify-content: center;
     border: #6666663d solid 1px;
-=======
 /* Estilo para a seção específica do candidato */
 .candidate {
     background-color: #ffffff; /* Cor de fundo da seção do candidato */
     padding: 2rem;
->>>>>>> Stashed changes
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
