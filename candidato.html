@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candidatos</title>
+    <title>Candidato</title>
     <!-- Link do Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -13,73 +13,78 @@
             background: #fff;
             display: flex;
             flex-direction: column;
-            width: 100dvw;
-            height: 100dvh;
+            width: 100vw;
+            height: 100vh;
         }
     </style>
 </head>
 
 <body>
-    <header class="bg-white p-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <img src="assets/img/logo.jpg" alt="Logo" class="img-fluid" style="height: 50px;">
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="#inicio">Página Inicial</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="#conheca">Conheça os Candidatos</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Meus Candidatos
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#apoie">Apoie Seu Candidato</a></li>
-                                    <li><a class="dropdown-item" href="#fale">Fale com Seu Candidato</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="#sobre">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="#contato">Contato</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn btn-outline-dark ms-3" href="#entrar">Entrar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn btn-dark ms-2" href="#cadastro">Cadastro</a>
-                            </li>
-                        </ul>
-                    </div>
+   <!-- header.html -->
+   <header class="bg-white p-3"  aria-labelledby="cabecalho">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <img src="assets/img/logo.jpg" alt="Logo da Decide Voto" class="img-fluid" style="height: 50px;">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light" id="cabecalho">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="index.html" aria-label="Página Inicial">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#conheca-os-candidatos" aria-label="Conheça os Candidatos">Conheça os Candidatos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Meus Candidatos">
+                                Meus Candidatos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#apoie" role="button" aria-label="Apoie Seu Candidato">Apoie Seu Candidato</a></li>
+                                <li><a class="dropdown-item" href="#fale" role="button" aria-label="Fale com Seu Candidato">Fale com Seu Candidato</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#noticias" aria-label="Notícias">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#sobre" aria-label="Sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#contato" aria-label="Contato">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-dark ms-3" href="#entrar" role="button" aria-label="Entrar">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-dark ms-2" href="#cadastro" role="button" aria-label="Cadastro">Cadastro</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+    </div>
     </header>
-
     <main class="container mt-4">
-        <div class="breadcrumb" >
-            Página Inicial > Pesquisar Cadidatos > Candidatos > José das Couves 
-        </div>
+        <nav aria-label="Navegação de trilha de páginas" aria-labelledby="trilha-de-pagina">
+            <div class="breadcrumb" id="trilha-de-pagina">
+                Página Inicial > Pesquisar Candidatos > Candidatos > José das Couves
+            </div>
+        </nav>
 
-        <span class="voltar">
-            <i class="fa-solid fa-arrow-left"></i>
+        <button class="btn btn-link" aria-label="Voltar para a página anterior">
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
             <span>Voltar</span>
-        </span>
+        </button>
 
-        <section class="candidato">
-            <h1 class="candidato-title">José das Couves</h1>
+        <section class="candidato" aria-labelledby="sessao-candidato">
+            <h1 id="sessao-candidato">José das Couves</h1>
 
-            <div class="candidato-container">
+            <div class="candidato-container" role="region">
                 <div class="candidato-imagem">
                     <img src="./assets/img/jose_das_couves.jpg" alt="Imagem do candidato José das Couves">
                 </div>
@@ -88,102 +93,96 @@
                     <p class="candidato-description">
                         Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
                     </p>
-                    <div class="candidato-actions">
-                        <button class="btn btn-dark">Adicionar aos Meus Candidatos</button>
-                        <button class="btn btn-dark">Fale com o candidato</button>
-                        <button class="btn btn-dark">Dê sua opinião</button>
+                    <div class="candidato-actions" role="group" aria-label="Ações do candidato">
+                        <button class="btn btn-dark" aria-label="Adicionar José das Couves aos meus candidatos">Adicionar aos Meus Candidatos</button>
+                        <button class="btn btn-dark" aria-label="Fale com o candidato José das Couves">Fale com o candidato</button>
+                        <button class="btn btn-dark" aria-label="Dê sua opinião sobre o candidato José das Couves">Dê sua opinião</button>
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="opinioes">
-            <h4>Opiniões</h4>
+        <section class="opinioes" aria-labelledby="sessao-opnioes">
+            <h4 id="sessao-opnioes">Opiniões</h4>
 
             <div class="opinioes-container">
-                <div class="opinioes-card">
+                <div class="opinioes-card" >
                     <div class="opinioes-card-stars">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
                     </div>
-    
+
                     <div class="opinioes-content">
-                        <span class="opinioes-content-title">Review title</span>
+                        <span class="opinioes-content-title" >Review title</span>
                         <span class="opinioes-content-body">Review body</span>
                     </div>
-    
+
                     <div class="opinioes-user">
                         <img class="opinioes-user-img" src="assets/img/avatar.png" alt="Avatar da pessoa que está opinando sobre o candidato">
                         <div class="opinioes-user-info">
-                            <span class="opinioes-user-info-name">Reviewer name</span>
+                            <span class="opinioes-user-info-name">Reviewer name 1</span>
                             <span class="opinioes-user-info-date">Date</span>
                         </div>
                     </div>
                 </div>
-    
-                <div class="opinioes-card">
-                    <div class="opinioes-card-stars">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+
+                <div class="opinioes-card" >
+                    <div class="opinioes-card-stars" >
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
                     </div>
-    
+
                     <div class="opinioes-content">
                         <span class="opinioes-content-title">Review title</span>
                         <span class="opinioes-content-body">Review body</span>
                     </div>
-    
+
                     <div class="opinioes-user">
                         <img class="opinioes-user-img" src="assets/img/avatar.png" alt="Avatar da pessoa que está opinando sobre o candidato">
                         <div class="opinioes-user-info">
-                            <span class="opinioes-user-info-name">Reviewer name</span>
+                            <span class="opinioes-user-info-name">Reviewer name 2</span>
                             <span class="opinioes-user-info-date">Date</span>
                         </div>
                     </div>
                 </div>
-    
-                <div class="opinioes-card">
+
+                <div class="opinioes-card" >
                     <div class="opinioes-card-stars">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
                     </div>
-    
+
                     <div class="opinioes-content">
                         <span class="opinioes-content-title">Review title</span>
-                        <span class="opinioes-content-body">Review body</span>
+                        <span class="opinioes-content-body" >Review body</span>
                     </div>
-    
+
                     <div class="opinioes-user">
                         <img class="opinioes-user-img" src="assets/img/avatar.png" alt="Avatar da pessoa que está opinando sobre o candidato">
                         <div class="opinioes-user-info">
-                            <span class="opinioes-user-info-name">Reviewer name</span>
+                            <span class="opinioes-user-info-name" >Reviewer name 3</span>
                             <span class="opinioes-user-info-date">Date</span>
                         </div>
                     </div>
                 </div>
             </div>
-
-            
-
         </section>
-
     </main>
 
-	<footer class="bg-light text-center p-3 mt-4">
-	<p>&copy; 2024 - Projeto Grupo 5.</p>
-	</footer>
+    <footer class="bg-light text-center p-3 mt-4" aria-labelledby="footer-heading">
+        <p id="footer-heading">&copy; 2024 - Projeto Grupo 5.</p>
+    </footer>
 
     <!-- Link do Bootstrap JS e Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
