@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 /* Estilo para o cabeçalho */
 header {
-    background-color: #ffffff; /* Cor de fundo header */
+    background-color: #ffffff; /* Cor de fundo do cabeçalho */
+}
+
+/* Estilo para ocultar a logo em telas pequenas */
+@media (max-width: 576px) {
+    .logo {
+        display: none; /* Oculta a logo em telas pequenas */
+    }
 }
 
 .navbar-nav .nav-link {
-    color: #333333 !important; /* Cor de header */
+    color: #333333 !important; /* Cor dos links de navegação */
 }
 
 .navbar-nav .nav-link:hover {
-    color: blue !important; /* ao passar o mouse */
+    color: blue !important; /* Cor dos links de navegação ao passar o mouse */
 }
 
 /* Estilo para os botões Entrar e Cadastro */
@@ -76,16 +81,45 @@ header {
     border-color: #000000;
 }
 
+/* Estilo para a seção principal da página inicial */
+.inicial {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f8f9fa; /* Cor de fundo da seção inicial */
+}
+
+.inicial h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+}
+
+.inicial p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    color: #555555;
+    margin: 10px 0;
+}
+
+.inicial .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
 /* Estilo para o título principal */
 h1 {
+    font-family: 'Arial', sans-serif;
     font-size: 32px;
     color: #333333;
     text-align: center;
     margin-top: 20px;
-}
-
-* {
-    font-family: "Montserrat", sans-serif;
 }
 
 /* Background do corpo */
@@ -93,10 +127,8 @@ body {
     background-color: #f5f5f5;
 }
 
-.candidato-title {
-    margin-bottom: 40px;
-}
 
+<<<<<<< Updated upstream
 .candidato {
     max-width: 1553px;
     display: flex;
@@ -153,12 +185,89 @@ body {
     align-items: flex-start;
     justify-content: center;
     border: #6666663d solid 1px;
+=======
+/* Estilo para a seção específica do candidato */
+.candidate {
+    background-color: #ffffff; /* Cor de fundo da seção do candidato */
+    padding: 2rem;
+>>>>>>> Stashed changes
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.opinioes-card-stars {
-    display: inline-flex;
-    gap: 2px;
+.candidate-name {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.75rem;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.candidate-description {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 1rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-group-vertical .btn {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.btn-dark {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.btn-dark:hover {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+/* Estilo para a seção de opiniões */
+.reviews {
+    background-color: #ffffff; /* Cor de fundo da seção de opiniões */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-card {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.review-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.review-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.25rem;
+    color: #333333;
+}
+
+.stars {
+    color: #f5c518; /* Cor das estrelas */
+}
+
+.star {
+    font-size: 1.5rem;
+}
+
+.review-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #666666;
+    margin-top: 0.5rem;
 }
 
 .opinioes-content {
@@ -198,9 +307,56 @@ body {
 }
 
 
-/* footer do corpo */
+/* Estilo para a seção Últimas Notícias */
+.news {
+    background-color: #ffffff; /* Cor de fundo da seção de notícias */
+    padding: 2rem 0;
+}
+
+.news-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 1rem;
+    text-align: left; /* Alinhamento do título à esquerda */
+}
+
+.card {
+ border: none;
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: left; /* Alinhamento do texto dentro do card à esquerda */
+}
+
+.card-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.25rem;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 1rem;
+}
+
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+}
+
+
+
+
+/* Estilo para o rodapé */
 footer {
-    background-color: #f8f9fa; /* Cor de fundo do footer */
+    background-color: #f8f9fa; /* Cor de fundo do rodapé */
     padding: 1rem;
     text-align: center;
     position: relative; /* Posicionamento padrão, mas pode ser customizado */
